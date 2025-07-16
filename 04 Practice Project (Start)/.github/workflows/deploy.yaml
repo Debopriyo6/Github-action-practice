@@ -13,7 +13,7 @@ jobs:
     deploy:
         runs-on: ubuntu-20.04
         steps:
-            - name: code checkout
+            - name: code-checkout from repo
               uses: actions/checkout@v4
 
             - name: Install dependencies
