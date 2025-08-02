@@ -10,7 +10,7 @@ jobs:
   test:
     strategy:
       matrix:
-        operating_system: [ubuntu_latest, windows_latest]
+        operating_system: [ubuntu-latest, windows-latest]
   
     runs-on: ${{matrix.operating_system}}
     steps:
