@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         operating_system: [ubuntu_latest, windows_latest]
-        version: [20,22]
+        version: [20.04,22.04]
     runs-on: ${{matrix.operating_system}}
     steps:
       - name: Get code
