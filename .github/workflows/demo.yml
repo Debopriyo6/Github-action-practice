@@ -29,7 +29,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build files
-          path: build-files
+          path: dist
             
   deploy:
     needs: build
