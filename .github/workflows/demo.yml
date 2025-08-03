@@ -47,7 +47,7 @@ jobs:
       - name: output the downloaded-files
         run: ls
       - name: Consuming the output of builld job
-        run: echo $ {{needs.build.outputs.build-output}}
+        run: echo "$ {{needs.build.outputs.build-output}}"
           
       - name: Deploying
         run: echo "Deploying..."  
