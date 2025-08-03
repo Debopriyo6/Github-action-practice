@@ -35,5 +35,12 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy
-        run: echo "Deploying..."
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-files
+      - name: output the downloaded-files
+        run: ls
+        
+      - name: Deploying
+        run: echo "Deploying..."  
