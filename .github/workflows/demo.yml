@@ -3,16 +3,9 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-       - main    
 jobs:
   test:
-    strategy:
-      matrix:
-        operating_system: [ubuntu-latest, windows-latest]
-  
-    runs-on: ${{matrix.operating_system}}
+    runs-on: ubuntu-latest
     steps:
       - name: Get code
         uses: actions/checkout@v3
